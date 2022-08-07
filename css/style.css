@@ -303,4 +303,8 @@ h2{
         width: 70%;
         margin: 0 auto;
     }
+    .seleccionado-description, .seleccionado-material, .buy p b, .buy input{
+        font-size: 0.8rem;
+    }
+
 }
