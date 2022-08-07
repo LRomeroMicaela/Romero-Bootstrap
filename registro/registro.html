@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Óptica Gaona</title>
+    <title>Registrarse Óptica Gaona</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/style.css">
     <style>
@@ -24,11 +24,10 @@
             </div>
               <div class="mobile">
                 <li class="nav-item dropdown">
-                  <a class="nav-link burger" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false"><img src="./img/menu.svg" alt=""></a>
+                  <a class="nav-link burger" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false"><img src="../img/menu.svg" alt=""></a>
                   <ul class="dropdown-menu desplegable">
-                    <li><a class="dropdown-item" href="#login">Log In</a></li>
-                    <li><a class="dropdown-item" href="./registro/registro.html">Registrarse</a></li>
-                    <li><a class="dropdown-item" href="./carrito/carrito.html">Carrito</a></li>
+                    <li><a class="dropdown-item" href="../registro/registro.html">Registrarse</a></li>
+                    <li><a class="dropdown-item" href="../carrito/carrito.html">Carrito</a></li>
                     <li><a class="dropdown-item" href="#ubicacion">Ubicación</a></li>
                   </ul>
                 </li>
@@ -58,9 +57,68 @@
             </button>
           </div>
     </section>
+    <form class="row g-3 needs-validation formul" novalidate>
+        <div class="col-md-8 col-8">
+          <label for="validationCustom01" class="form-label">Nombre</label>
+          <input type="text" class="form-control caja" id="validationCustom01" value="" required>
+          <div class="valid-feedback">
+            Aceptado.
+          </div>
+        </div>
+        <div class="col-md-8 col-8">
+          <label for="validationCustom02" class="form-label">Apellido</label>
+          <input type="text" class="form-control caja" id="validationCustom02" value="" required>
+          <div class="valid-feedback">
+            Aceptado.
+          </div>
+        </div>
+        <div class="col-md-8 col-8">
+          <label for="validationCustomUsername" class="form-label">Usuario</label>
+          <div class="input-group has-validation">
+            <span class="input-group-text but" id="inputGroupPrepend">@</span>
+            <input type="text" class="form-control caja" id="validationCustomUsername" aria-describedby="inputGroupPrepend" required>
+            <div class="invalid-feedback">
+              Por favor, elija un nombre de usuario.
+            </div>
+          </div>
+        </div>
+        <div class="col-md-8 col-10">
+          <label for="validationCustom03" class="form-label">Ciudad</label>
+          <input type="text" class="form-control caja" id="validationCustom03" required>
+          <div class="invalid-feedback">
+            Por favor, ingrese una ciudad válida.
+          </div>
+        </div>
+        <div class="col-md-8 col-10">
+          <label for="validationCustom04" class="form-label">Provincia</label>
+          <select class="form-select caja" id="validationCustom04" required>
+          </select>
+          <div class="invalid-feedback">
+            Por favor, ingrese una provincia válida.
+          </div>
+        </div>
+        <div class="col-md-8 col-10">
+          <label for="validationCustom05" class="form-label">Contraseña</label>
+          <input type="text" class="form-control caja" id="validationCustom05" required>
+          <div class="invalid-feedback">
+            Por favor, ingrese una contraseña válida.
+          </div>
+        </div>
+        <div class="col-12">
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+            <label class="form-check-label" for="invalidCheck">
+              Quiero suscribirme al newsletter.
+            </label>
+          </div>
+        </div>
+        <div class="col-12">
+          <button class="btn btn-primary but" type="submit">Aceptar</button>
+        </div>
+      </form>
     <footer class="footer">
         <div id="ubicacion"> <b>Ubicación</b></div>
-        <div><iframe class="mapa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d52507.964408496046!2d-58.554255987416525!3d-34.66107224368485!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc7fd666dbff3%3A0x7ede337b49b40ef!2sGaona%20%C3%93ptica!5e0!3m2!1ses-419!2sar!4v1657315537296!5m2!1ses-419!2sar" width="350" height="280" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+        <div><iframe class="mapa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d52507.964408496046!2d-58.554255987416525!3d-34.66107224368485!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc7fd666dbff3%3A0x7ede337b49b40ef!2sGaona%20%C3%93ptica!5e0!3m2!1ses-419!2sar!4v1657315537296!5m2!1ses-419!2sar" width="70%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
         <div class="footer-hour">
             <h3><b>Horario</b></h3> <p> Lunes a Viernes de 9:00hs a 13:00hs y de 15:00hs a 19:00hs, Sábados de 9:00hs a 13:00hs. Domingo CERRADO. </p>
             <h3><b>Medios de Pago</b></h3> <p>Se aceptan todos los medios de pago.</p>
