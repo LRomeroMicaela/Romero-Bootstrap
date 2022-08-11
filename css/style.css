@@ -74,7 +74,19 @@ h2{
     padding: 1rem;
     margin: 1rem; 
 }
-
+.subm{
+    background-color: gainsboro;
+    border-color: gray;
+    color: black;
+    font-family: 'Playfair Display', serif;
+    font-size: 1rem; 
+    font-weight: 600;
+}
+.txt-login{
+    font-family: 'Playfair Display', serif;
+    font-size: 1rem; 
+    font-weight: 600;
+}
 /* footer */
 .footer-hour h3{
     font-family:'Ubuntu Condensed', sans-serif;
@@ -306,7 +318,10 @@ h2{
     .seleccionado-description, .seleccionado-material, .buy p b, .buy input{
         font-size: 0.8rem;
     }
-
+    .buy-term{
+        display: flex;
+        justify-content: center;   
+    }
 }
 /* HTML REGISTRO */
 .formul{
