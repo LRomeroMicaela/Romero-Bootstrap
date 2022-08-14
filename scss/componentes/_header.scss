@@ -1,0 +1,43 @@
+.logo{
+    border-radius: 50%;
+}
+.menu-logo{
+    display: flex;
+    justify-content: flex-start;
+}
+.menu{
+    color: black;
+    font-family: $font-general;
+    font-weight: 600;
+}
+.menu-txt{
+    @extend %disposicion;
+    flex-wrap: wrap;
+}
+.mobile{
+    display: none;
+}
+
+@media screen and (max-width: 576px){
+    .mobile{
+        display: flex;
+        align-items: center;
+    } 
+    .orden_nav{
+        display: flex;
+        justify-content: space-between;
+    }
+    .burger{
+        background-color: lightseagreen;
+    }
+    .menu-txt{
+        display: none;
+    }
+    .list-no{
+        list-style: none;
+    }
+    .desplegable{
+        background-color: lightseagreen;
+        font-weight: 600;
+    }
+}

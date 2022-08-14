@@ -1,0 +1,34 @@
+.catalogo{
+    @extend %disposicion;
+} 
+.img-cat{
+    padding:nth($size,1);
+    margin:nth($size,1);
+    background-color: $bg_imgcatalogo;
+}
+/* animaciones */
+/* animate main */
+.main-img1:hover{
+    transform: translate(5px,5px);
+    transition: translate .3s;
+}
+.main-img2:hover{
+    transform: translate(5px,5px);
+    transition: translate .3s;
+}
+.main-img3:hover{
+    transform: translate(5px,5px);
+    transition: translate .3s;
+}
+.main-img4:hover{
+    transform: translate(5px,5px);
+    transition: translate .3s;
+}
+.main-img5:hover{
+    transform: translate(5px,5px);
+    transition: translate .3s;
+}
+.main-img6:hover{
+    transform: translate(5px,5px);
+    transition: translate .3s;
+}

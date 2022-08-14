@@ -1,0 +1,25 @@
+.formulary{
+    @extend %disposicion;
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin: nth($size, 4);
+}
+h2{
+    font-family:$font-general;
+    font-weight: 600;
+    padding: nth($size, 4) ;
+    margin: nth($size, 6); 
+}
+.subm{
+    background-color:$bg_button;
+    border-color: $border_button;
+    color: black;
+    font-family: $font-general;
+    font-size: nth($size, 4); 
+    font-weight: 600;
+}
+.txt-login{
+    font-family: $font-general;
+    font-size: nth($size, 4); 
+    font-weight: 600;
+}

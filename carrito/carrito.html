@@ -67,52 +67,63 @@
             <div class="seleccionado-material col-10"><p>Material:</p></div>
         </div>
         </div>
-        <div class="buy">
-        <div class="buy-detail">
+      <section class= "buy">
+        <p><b> Datos para la compra</b></p>
         <form action="post">
-            <p><b>Detalle de la Compra</b></p>
-            <select class="form-select buy-cant" aria-label="Default select example">
-                <option selected>Cantidad</option>
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-            </select>
-            <p>Número de Tarjeta</p>
-                <input type="text" required="">
-            <p>Nombre y Apellido</p>
-                <input type="text" required="">
-            <p>Código de Seguridad</p>
-                <input type="text" required="">
-        </form> 
-        </div>
-        <div class="buy-dates">   
-        <form action="post">   
-            <p><b> Datos para el envío y facturación</b></p>
-            <p>Domicilio</p>
-                <input type="text" required="">
-            <p>Localidad</p>
-                <input type="text" required="">
-            <p>Provincia</p>
-                <input type="text" required="">
-            <p>Email</p>
-                <input type="email" required="">
-            <p>Teléfono</p>
-                <input type="number" required=""> <br> <br>
+        <select class="form-select cant" aria-label="Default select example">
+          <option selected>Cantidad</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+        </select>
         </form>
-        </div>
+        <form class="row g-3 needs-validation formul" novalidate>
+          <div class="col-md-8 col-8">
+            <label for="validationCustom01" class="form-label">Número de Tarjeta</label>
+            <input type="text" class="form-control caja" id="validationCustom01" value="" required>
+          </div>
+          <div class="col-md-8 col-8">
+            <label for="validationCustom02" class="form-label">Nombre y Apellido</label>
+            <input type="text" class="form-control caja" id="validationCustom02" value="" required>
+          </div>
+          <div class="col-md-8 col-10">
+            <label for="validationCustom03" class="form-label">Código de Seguridad</label>
+            <input type="text" class="form-control caja" id="validationCustom03" required>
+          </div>
+          <p><b> Datos para el envío y facturación</b></p>
+          <div class="col-md-8 col-10">
+            <label for="validationCustom03" class="form-label">Domicilio</label>
+            <input type="text" class="form-control caja" id="validationCustom03" required>
+          </div>
+          <div class="col-md-8 col-10">
+            <label for="validationCustom03" class="form-label">Localidad</label>
+            <input type="text" class="form-control caja" id="validationCustom03" required>
+          </div>
+          <div class="col-md-8 col-10">
+            <label for="validationCustom03" class="form-label">Provincia</label>
+            <input type="text" class="form-control caja" id="validationCustom03" required>
+          </div>
+          <div class="col-md-8 col-10">
+            <label for="validationCustom03" class="form-label">Email</label>
+            <input type="text" class="form-control caja" id="validationCustom03" required>
+          </div>
+          <div class="col-md-8 col-10">
+            <label for="validationCustom05" class="form-label">Teléfono</label>
+            <input type="text" class="form-control caja" id="validationCustom05" required>
+        </section>
         <div class="buy-term container">
-        <form action="post row">
+          <form action="post row">
                 <div class="col-12">  
                 <p>*Si desea que le enviemos un presupuesto, adjunte la receta:</p>
                 <div class="mb-3">
                     <label for="formFile" class="form-label"></label>
-                    <input class="col-10" type="file">
+                    <input class="col-10 cant-select" type="file">
                 </div>
                 </div> 
             <div class="col-12">
                 <p>*En el caso de que desee un tratamiento especial a sus cristales, 
                 elija de la lista los tratamientos disponibles:</p>
-                <select class="form-select list-tratamient" aria-label="Default select example">
+                <select class="cant col-6" aria-label="Default select example">
                     <option selected>Tratamientos</option>
                     <option value="1">Orgánico Blanco</option>
                     <option value="2">Multifocal</option>
@@ -143,7 +154,7 @@
                 <textarea class="form-control" placeholder="Leave a comment here" style="width: 100%; height: 100%;"></textarea>
                 <label for="floatingTextarea2"></label>
             </div>
-            <input type="submit">
+            <input  class="cant" type="submit">
             <p><b> ¡Muchas Gracias por habernos elegido</b>!</p>
             </div>
         </form>
