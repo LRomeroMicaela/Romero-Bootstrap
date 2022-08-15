@@ -1,6 +1,5 @@
 .formul{
-    display: flex;
-    justify-content: center;
+    @extend %disposicion;
     margin: nth($size,1);
     padding: nth($size,1);
     font-family: $font-general;
@@ -16,5 +15,6 @@
     font-weight: 600;
 }
 .caja{
-    background-color: $border_button;
+    background-color: $bg_button
+    ;
 }

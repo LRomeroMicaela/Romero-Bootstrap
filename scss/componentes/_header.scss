@@ -8,16 +8,16 @@
 .menu{
     color: black;
     font-family: $font-general;
-    font-weight: 600;
+    padding: nth($size,4);
 }
 .menu-txt{
     @extend %disposicion;
     flex-wrap: wrap;
+    list-style: none;
 }
 .mobile{
     display: none;
 }
-
 @media screen and (max-width: 576px){
     .mobile{
         display: flex;

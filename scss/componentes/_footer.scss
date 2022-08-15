@@ -24,12 +24,9 @@
     padding:nth($size,4);   
 }
 #instagram{
-    background-color:$bg_lightgreen;
-    border-radius: 50%;
-    padding: nth($size,4);
+    padding: nth($size,1);
     position: fixed;
-    text-align: center;
-    max-width: 100%;
+    text-align: right;
     bottom: 0;
     right: 0;
     margin: nth($size,1);
@@ -62,6 +59,13 @@
 .icon{
     margin: nth($size, 4);
 }
+.div-mediopago{
+    @extend %disposicion;
+    flex-direction: row;
+}
+.mediopago{
+    display:inline-block;
+}
 @media screen and (max-width:768px) {
     .footer-hour {
         p{
@@ -88,5 +92,8 @@
     }
     #instagram{
         display: none;
-    }    
+    } 
+    .div-mediopago{
+        display: none;
+    }   
 }

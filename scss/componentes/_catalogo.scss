@@ -6,6 +6,104 @@
     margin:nth($size,1);
     background-color: $bg_imgcatalogo;
 }
+.img-banner{
+    max-width: 50%;
+    padding: nth($size,1);
+    margin: nth($size,4);
+}
+section{
+    div{
+        div{
+            p{
+                margin: nth($size,4);
+                font-family: $font-general;
+                // padding: nth($size,1);
+            }
+        }
+    }
+}
+h3{
+    margin: nth($size,4);
+    padding: nth($size,1);
+    font-family: $font-general;
+}
+.banner-contain{
+    margin: nth($size,4);
+    margin-bottom: nth($size,6);
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1.5fr;
+    grid-template-rows: 2fr;
+    grid-template-areas: "img1 txt1 img2 txt2 img3 txt3";
+}
+.img1-ban{
+    grid-area: img1;
+    @extend %disposicion;
+}
+.img2-ban{
+    grid-area: img2;
+    @extend %disposicion;
+}
+.img3-ban{
+    grid-area: img3;
+    @extend %disposicion;
+}
+.txt1-ban{
+    grid-area: txt1;
+    @extend %disposicion;
+    flex-direction: column;
+}
+.txt2-ban{
+    grid-area: txt2;
+    @extend %disposicion;
+    flex-direction: column;
+}
+.txt3-ban{
+    grid-area: txt3;
+    @extend %disposicion;
+    flex-direction: column;
+}
+@media screen and (max-width: 768px){
+    .banner-contain{
+        margin: nth($size,1);
+        margin-bottom: nth($size,6);
+        text-align: center;
+        display:grid;
+        grid-template-columns: 0.5fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-areas: 
+        "img1 txt1"  
+        "img2 txt2" 
+        "img3 txt3";
+    }
+    .img1-ban{
+        grid-area: img1;
+        @extend %disposicion;
+    }
+    .img2-ban{
+        grid-area: img2;
+        @extend %disposicion;
+    }
+    .img3-ban{
+        grid-area: img3;
+        @extend %disposicion;
+    }
+    .txt1-ban{
+        grid-area: txt1;
+        @extend %disposicion;
+        flex-direction: column;
+    }
+    .txt2-ban{
+        grid-area: txt2;
+        @extend %disposicion;
+        flex-direction: column;
+    }
+    .txt3-ban{
+        grid-area: txt3;
+        @extend %disposicion;
+        flex-direction: column;
+    }
+}
+
 /* animaciones */
 /* animate main */
 .main-img1:hover{
