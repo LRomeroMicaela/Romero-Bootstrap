@@ -4,9 +4,10 @@
     flex-direction: column;
     margin: nth($size, 4);
 }
-h2{
-    font-family:$font-general;
+#login{
+    font-family:$font-title;
     font-weight: 600;
+    font-size:nth($size, 6) ;
     padding: nth($size, 4) ;
     margin: nth($size, 6); 
 }

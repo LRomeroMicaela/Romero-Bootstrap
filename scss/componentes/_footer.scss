@@ -62,6 +62,7 @@
 .div-mediopago{
     @extend %disposicion;
     flex-direction: row;
+    margin: 1rem;
 }
 .mediopago{
     display:inline-block;
