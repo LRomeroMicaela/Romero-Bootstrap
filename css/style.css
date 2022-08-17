@@ -1,4 +1,4 @@
-.formul, .div-mediopago, .formulary, .txt3-ban, .txt2-ban, .txt1-ban, .img3-ban, .img2-ban, .img1-ban, .catalogo, .seleccionado-img img, .buy p, .buy-term, .buy, .menu-txt {
+.formul, .div-mediopago, .formulary, .txt3-ban, .txt2-ban, .txt1-ban, .img3-ban, .img2-ban, .img1-ban, .catalogo, .seleccionado-img img, .buy p, .buy-term, .buy, .descuento, .banner-up, .menu-txt {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -29,6 +29,9 @@
 }
 
 @media screen and (max-width: 576px) {
+  .banner-up {
+    display: none;
+  }
   .mobile {
     display: flex;
     align-items: center;
@@ -51,6 +54,28 @@
     font-weight: 600;
   }
 }
+.banner-up {
+  flex-direction: row;
+  flex-wrap: wrap;
+  height: 60%;
+  background-color: black;
+}
+
+.descuento {
+  color: white;
+  font-family: "Roboto Slab", serif;
+}
+
+.bomb {
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+.banner-up:hover {
+  background-color: mediumblue;
+  transition: background-color 0.5s;
+}
+
 .buy {
   flex-direction: column;
 }

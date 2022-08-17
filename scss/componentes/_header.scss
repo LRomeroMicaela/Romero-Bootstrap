@@ -19,6 +19,9 @@
     display: none;
 }
 @media screen and (max-width: 576px){
+    .banner-up{
+        display: none;
+    }
     .mobile{
         display: flex;
         align-items: center;
@@ -40,4 +43,27 @@
         background-color: lightseagreen;
         font-weight: 600;
     }
+}
+
+// banner superior
+
+.banner-up{
+    @extend %disposicion;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: 60%;
+    background-color: black ;
+}
+.descuento{
+    color: white;
+    @extend %disposicion;
+    font-family: $font-general;
+}
+.bomb{
+    margin-left: nth($size,4);
+    margin-right: nth($size,4);
+}
+.banner-up:hover{
+    background-color: mediumblue;
+    transition: background-color .5s;
 }
