@@ -12,7 +12,7 @@
 }
 .menu-txt{
     @extend %disposicion;
-    flex-wrap: wrap;
+    flex-wrap: map-get($banner-header, continuidad);
     list-style: none;
 }
 .mobile{
@@ -46,13 +46,12 @@
 }
 
 // banner superior
-
 .banner-up{
     @extend %disposicion;
-    flex-direction: row;
-    flex-wrap: wrap;
-    height: 60%;
-    background-color: black ;
+    flex-direction: map-get($banner-header,direccion);
+    flex-wrap: map-get($banner-header, continuidad);
+    height: map-get($banner-header, ancho);
+    background-color: map-get($banner-header , bg-banner);
 }
 .descuento{
     color: white;

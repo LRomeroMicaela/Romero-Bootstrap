@@ -318,6 +318,10 @@ h3 {
   transition: translate 0.3s;
 }
 
+.subm {
+  margin-top: 1rem;
+}
+
 .formulary {
   flex-wrap: wrap;
   flex-direction: column;

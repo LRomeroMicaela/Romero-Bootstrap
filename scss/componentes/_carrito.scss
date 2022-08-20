@@ -73,16 +73,14 @@
 }
 .seleccionado-description{
     grid-area: desc;
-    display: flex;
-    align-items: center;
+    @include aligncenter;
     font-family:$font-general;
     font-size: 1rem; 
     font-weight: 600;   
 }
 .seleccionado-material{
     grid-area: mat;
-    display: flex;
-    align-items: center;
+    @include aligncenter;
     font-family: $font-general;
     font-size: 1rem; 
     font-weight: 600;
@@ -109,7 +107,6 @@
         font-size: 0.8rem;
     }
     .buy-term{
-        display: flex;
-        justify-content: center;   
+        @include justifycenter;  
     }
 }
