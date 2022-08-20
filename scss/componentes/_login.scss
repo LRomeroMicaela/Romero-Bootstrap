@@ -24,3 +24,35 @@
     font-size: nth($size, 4); 
     font-weight: 600;
 }
+ .img-promocionales{
+  display: grid;
+  grid-template-columns: 1.0fr 1.0fr 1.0fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas: 
+  "prom1 prom2 prom3"
+  "prom1 prom2 prom4"
+  ;
+  margin-left: 8rem;
+ }
+ .prom1{
+    grid-area: prom1;
+    margin: nth($size,1);
+    margin-top: nth($size,6);
+ }
+.prom2{
+    grid-area: prom2;
+    margin: nth($size,1);
+    margin-top: nth($size,6);
+}
+.prom3{
+    grid-area: prom3; 
+    margin-top: 1.5rem;   
+}
+.prom4{
+    grid-area: prom4;  
+}
+.prom3, .prom4{
+    display: map-get($promocionales-ubicacion, flex );
+    flex-direction: map-get($promocionales-ubicacion , row ) ;
+    margin: map-get($promocionales-ubicacion, 0.5rem );
+}
