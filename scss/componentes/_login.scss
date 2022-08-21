@@ -56,3 +56,19 @@
     flex-direction: map-get($promocionales-ubicacion , row ) ;
     margin: map-get($promocionales-ubicacion, 0.5rem );
 }
+@media screen and (max-width:768px){
+    .prom2, .prom3, .prom4{
+        display: none;
+    }
+    .img-promocionales{
+        display: flex;
+        flex-direction: column;
+        margin: 1rem;
+        justify-content: center;
+        align-items: center;
+    }
+    .prom1{
+        width: 60%;
+        height: 60%;
+    }
+}

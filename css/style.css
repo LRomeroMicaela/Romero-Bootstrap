@@ -380,6 +380,22 @@ h3 {
   grid-area: prom4;
 }
 
+@media screen and (max-width: 768px) {
+  .prom2, .prom3, .prom4 {
+    display: none;
+  }
+  .img-promocionales {
+    display: flex;
+    flex-direction: column;
+    margin: 1rem;
+    justify-content: center;
+    align-items: center;
+  }
+  .prom1 {
+    width: 60%;
+    height: 60%;
+  }
+}
 /* footer */
 .footer-hour h3 {
   font-family: "Ubuntu Condensed", sans-serif;
