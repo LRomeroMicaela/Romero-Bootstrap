@@ -1,3 +1,12 @@
+.titulo{
+    font-family:$font-title;
+    font-weight: 600;
+    font-size:nth($size, 6);
+    padding: nth($size, 1);
+    margin: nth($size, 1);
+    display: flex;
+    justify-content: flex-end; 
+}
 .logo{
     border-radius: 50%;
 }
@@ -42,6 +51,9 @@
     .desplegable{
         background-color: lightseagreen;
         font-weight: 600;
+    }
+    .titulo{
+        display: none;
     }
 }
 
