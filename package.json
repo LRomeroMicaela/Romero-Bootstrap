@@ -249,5 +249,5 @@
     "yargs": "^17.5.1",
     "yargs-parser": "^20.2.9"
   },
-  "description": ""
+  "description": "- mixin: aplique a tres clases seleccionado-description, buy.term y seleccionado-material.\r -maps en la clase banner-up, menu-txt y prom3 y 4.\r -extend: lo aplique en casi todo lo que tenia display flex."
 }
