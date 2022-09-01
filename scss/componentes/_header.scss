@@ -2,10 +2,10 @@
     font-family:$font-title;
     font-weight: 600;
     font-size:nth($size, 6);
-    padding: nth($size, 1);
-    margin: nth($size, 1);
+    padding: nth($size, 4);
+    margin: nth($size, 4);
     display: flex;
-    justify-content: flex-end; 
+    justify-content: flex-start; 
 }
 .logo{
     border-radius: 50%;
@@ -51,9 +51,6 @@
     .desplegable{
         background-color: lightseagreen;
         font-weight: 600;
-    }
-    .titulo{
-        display: none;
     }
 }
 

@@ -103,34 +103,37 @@ h3{
         flex-direction: column;
     }
 }
+.subm{
+    margin-top: nth($size, 4);
+    
+}
+.subm:hover{
+    background-color: rgb(68,100,161);
+}
 
 /* animaciones */
 /* animate main */
 .main-img1:hover{
     transform: translate(5px,5px);
-    transition: translate .3s;
+    transition: translate .5s;
 }
 .main-img2:hover{
     transform: translate(5px,5px);
-    transition: translate .3s;
+    transition: translate .5s;
 }
 .main-img3:hover{
     transform: translate(5px,5px);
-    transition: translate .3s;
+    transition: translate .5s;
 }
 .main-img4:hover{
     transform: translate(5px,5px);
-    transition: translate .3s;
+    transition: translate .5s;
 }
 .main-img5:hover{
     transform: translate(5px,5px);
-    transition: translate .3s;
+    transition: translate .5s;
 }
 .main-img6:hover{
     transform: translate(5px,5px);
-    transition: translate .3s;
-}
-
-.subm{
-    margin-top: nth($size, 4);
+    transition: translate .5s;
 }

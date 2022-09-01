@@ -2,23 +2,30 @@
 .footer-hour {
     h3{
     font-family:$font-title;
-    font-size: nth($size,5);
+    font-size: nth($size,6);
     margin: nth($size,4);
 }
+    p{
+       font-family: $font-general;
+       font-size: nth($size,3) ;
+       letter-spacing: 0.1rem; 
+       padding: 0.8rem;
+    }
 }
 .footer-hour{
     margin-right:nth($size,5);
 }
 #ubicacion{
     font-family:$font-title;
-    font-size:nth($size,5);
+    font-size:nth($size,6);
     margin: nth($size,4);
 }
 .footer{
     font-family: $font-general;
     font-size: nth($size,2);
     font-weight: bold;
-    background-color: $bg_lightgreen;
+    background: rgb(86,109,172);
+    background: linear-gradient(252deg, rgba(86,109,172,1) 0%, rgba(86,109,172,1) 55%, rgba(123,126,232,0.63) 83%, rgba(123,126,232,1) 99%);
     list-style: none;
     text-decoration: none;
     padding:nth($size,4);   
