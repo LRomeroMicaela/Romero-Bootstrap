@@ -103,11 +103,17 @@ h3{
         flex-direction: column;
     }
 }
-.subm{
+.subm1{
     margin-top: nth($size, 4);
+    background-color:$bg_button;
+    border-color: $border_button;
+    color: black;
+    font-family: $font-general;
+    font-size: nth($size, 2); 
+    font-weight: 600;
     
 }
-.subm:hover{
+.subm1:hover{
     background-color: rgb(68,100,161);
 }
 
@@ -115,25 +121,25 @@ h3{
 /* animate main */
 .main-img1:hover{
     transform: translate(5px,5px);
-    transition: translate .5s;
+    transition-duration: 1s;
 }
 .main-img2:hover{
     transform: translate(5px,5px);
-    transition: translate .5s;
+    transition-duration: 1s;
 }
 .main-img3:hover{
     transform: translate(5px,5px);
-    transition: translate .5s;
+    transition-duration: 1s;
 }
 .main-img4:hover{
     transform: translate(5px,5px);
-    transition: translate .5s;
+    transition-duration: 1s;
 }
 .main-img5:hover{
     transform: translate(5px,5px);
-    transition: translate .5s;
+    transition-duration: 1s;
 }
 .main-img6:hover{
     transform: translate(5px,5px);
-    transition: translate .5s;
+    transition-duration: 1s;
 }

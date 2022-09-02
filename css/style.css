@@ -296,11 +296,17 @@ h3 {
     flex-direction: column;
   }
 }
-.subm {
+.subm1 {
   margin-top: 1rem;
+  background-color: gainsboro;
+  border-color: gray;
+  color: black;
+  font-family: "Roboto Slab", serif;
+  font-size: 0.8rem;
+  font-weight: 600;
 }
 
-.subm:hover {
+.subm1:hover {
   background-color: rgb(68, 100, 161);
 }
 
@@ -308,32 +314,32 @@ h3 {
 /* animate main */
 .main-img1:hover {
   transform: translate(5px, 5px);
-  transition: translate 0.5s;
+  transition-duration: 1s;
 }
 
 .main-img2:hover {
   transform: translate(5px, 5px);
-  transition: translate 0.5s;
+  transition-duration: 1s;
 }
 
 .main-img3:hover {
   transform: translate(5px, 5px);
-  transition: translate 0.5s;
+  transition-duration: 1s;
 }
 
 .main-img4:hover {
   transform: translate(5px, 5px);
-  transition: translate 0.5s;
+  transition-duration: 1s;
 }
 
 .main-img5:hover {
   transform: translate(5px, 5px);
-  transition: translate 0.5s;
+  transition-duration: 1s;
 }
 
 .main-img6:hover {
   transform: translate(5px, 5px);
-  transition: translate 0.5s;
+  transition-duration: 1s;
 }
 
 .formulary {
@@ -357,6 +363,11 @@ h3 {
   font-family: "Roboto Slab", serif;
   font-size: 1rem;
   font-weight: 600;
+  margin-bottom: 2rem;
+}
+
+.subm:hover {
+  background-color: rgb(68, 100, 161);
 }
 
 .txt-login {
@@ -368,30 +379,26 @@ h3 {
 .img-promocionales {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
-  grid-template-areas: "prom1 prom2 prom3" "prom1 prom2 prom4";
-  margin-left: 8rem;
+  grid-template-rows: 1fr;
+  grid-template-areas: "prom1 prom2 prom3";
 }
 
 .prom1 {
   grid-area: prom1;
-  margin: 0.5rem;
+  margin: 2rem;
   margin-top: 2rem;
 }
 
 .prom2 {
   grid-area: prom2;
-  margin: 0.5rem;
+  margin: 2rem;
   margin-top: 2rem;
 }
 
 .prom3 {
   grid-area: prom3;
-  margin-top: 1.5rem;
-}
-
-.prom4 {
-  grid-area: prom4;
+  margin: 2rem;
+  margin-top: 2rem;
 }
 
 @media screen and (max-width: 768px) {
