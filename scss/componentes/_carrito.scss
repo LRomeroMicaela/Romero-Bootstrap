@@ -56,6 +56,15 @@
     margin: nth($size,1);
     background-color: $bg_button;
 }
+.thank{
+    margin: nth($size,6);
+}
+
+// animacion boton
+.env:hover{
+    background-color: rgb(68,100,161);
+    color: white;
+}
 
 /* CARRITO img, description y material */
 .seleccionado{

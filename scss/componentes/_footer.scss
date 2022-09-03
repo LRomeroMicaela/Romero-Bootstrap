@@ -24,8 +24,8 @@
     font-family: $font-general;
     font-size: nth($size,2);
     font-weight: bold;
-    background: rgb(86,109,172);
-    background: linear-gradient(252deg, rgba(86,109,172,1) 0%, rgba(86,109,172,1) 55%, rgba(123,126,232,0.63) 83%, rgba(123,126,232,1) 99%);
+    background: rgb(218,230,252);
+    background: linear-gradient(313deg, rgba(218,230,252,1) 0%, rgba(61,87,165,1) 99%);
     list-style: none;
     text-decoration: none;
     padding:nth($size,4);   
@@ -53,7 +53,7 @@
     grid-area: title;
 }
 .mapa{
-    grid-area: mapa;
+    grid-area: map;
 }
 .footer-icon{
     grid-area: ic;
@@ -74,6 +74,7 @@
 .mediopago{
     display:inline-block;
 }
+
 @media screen and (max-width:768px) {
     .footer-hour {
         p{
@@ -88,7 +89,7 @@
         grid-template-rows: 0.1fr 0.1fr 0.1fr 0.1fr;
         grid-template-areas: 
         "title"
-        "mapa"
+        "map"
         "hora"
         "ic";
     } 
@@ -103,5 +104,10 @@
     } 
     .div-mediopago{
         display: none;
-    }   
+    }
+    .mapa{
+        max-width: 80%;
+    } 
 }
+
+

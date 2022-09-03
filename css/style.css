@@ -1,4 +1,4 @@
-.formul, .div-mediopago, .formulary, .txt3-ban, .txt2-ban, .txt1-ban, .img3-ban, .img2-ban, .img1-ban, .catalogo, .seleccionado-img img, .buy p, .buy-term, .buy, .descuento, .banner-up, .menu-txt {
+.aceptar, .formul, .div-mediopago, .formulary, .txt3-ban, .txt2-ban, .txt1-ban, .img3-ban, .img2-ban, .img1-ban, .catalogo, .seleccionado-img img, .buy p, .buy-term, .buy, .descuento, .banner-up, .menu-txt {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -83,7 +83,7 @@
 
 .banner-up:hover {
   background-color: mediumblue;
-  transition: background-color 0.5s;
+  transition-duration: 1s;
 }
 
 .buy {
@@ -148,6 +148,15 @@
   font-weight: bold;
   margin: 0.5rem;
   background-color: gainsboro;
+}
+
+.thank {
+  margin: 2rem;
+}
+
+.env:hover {
+  background-color: rgb(68, 100, 161);
+  color: white;
 }
 
 /* CARRITO img, description y material */
@@ -444,8 +453,8 @@ h3 {
   font-family: "Roboto Slab", serif;
   font-size: 0.8rem;
   font-weight: bold;
-  background: rgb(86, 109, 172);
-  background: linear-gradient(252deg, rgb(86, 109, 172) 0%, rgb(86, 109, 172) 55%, rgba(123, 126, 232, 0.63) 83%, rgb(123, 126, 232) 99%);
+  background: rgb(218, 230, 252);
+  background: linear-gradient(313deg, rgb(218, 230, 252) 0%, rgb(61, 87, 165) 99%);
   list-style: none;
   text-decoration: none;
   padding: 1rem;
@@ -474,7 +483,7 @@ h3 {
 }
 
 .mapa {
-  grid-area: mapa;
+  grid-area: map;
 }
 
 .footer-icon {
@@ -510,7 +519,7 @@ h3 {
     grid-gap: 10px;
     grid-template-columns: 1fr;
     grid-template-rows: 0.1fr 0.1fr 0.1fr 0.1fr;
-    grid-template-areas: "title" "mapa" "hora" "ic";
+    grid-template-areas: "title" "map" "hora" "ic";
   }
   #mediopago {
     max-width: 12%;
@@ -523,6 +532,9 @@ h3 {
   }
   .div-mediopago {
     display: none;
+  }
+  .mapa {
+    max-width: 80%;
   }
 }
 .formul {
@@ -544,6 +556,10 @@ h3 {
 
 .caja {
   background-color: gainsboro;
+}
+
+.but:hover {
+  background-color: rgb(68, 100, 161);
 }
 
 * {

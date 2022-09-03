@@ -18,3 +18,11 @@
     background-color: $bg_button
     ;
 }
+.aceptar{
+    @extend %disposicion;   
+}
+
+// animacion boton
+.but:hover{
+    background-color: rgb(68,100,161);   
+}
