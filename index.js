@@ -10,6 +10,9 @@ class Lentes{
         this.precio = precio;
         this.stock = stock;
     }
+    restaStock(){
+        this.stock = this.stock - 1; //acá tengo que poner la cantidad que seleccione el cliente
+    }
 }
 
 //creacion de objetos de la clase Lentes
@@ -25,32 +28,55 @@ let lentesDisponibles = [armazon1, armazon2, armazon3, armazon4, armazon5, armaz
 function armadoCard(){
     for (let armazon of lentesDisponibles){
         let card = document.createElement("div")
-        card.innerHTML += `<div class="card col-10 col-md-3 img-cat main-img">
-        
-        <img src = ${armazon.img} class="card-img-top" alt = ${armazon.nombre}>
+        card.innerHTML += `
+            
             <div class="card-body">
-              <h5 class="card-title txt-login">${armazon.nombre}+","+${armazon.marca}</h5>
-              <p class="card-text txt-login">${armazon.precio}</p>
-              <a href="#" class="btn btn-primary subm1">Agregar al carrito</a>
-            </div>
-        </div>`;
-        document.body.append(card);    
+            <img src = ${armazon.img} class="card-img-top" alt = ${armazon.nombre}>
+              <h5 class="card-title txt-login">${armazon.nombre}, ${armazon.marca}</h5>
+              <p class="card-text txt-login">$${armazon.precio}</p>
+              <a id="btn-add" onclick ="armazon.restaStock()" href="#" class="btn btn-primary subm1">Agregar al carrito</a>
+            
+        </div>`; //ver onclick
+        document.getElementById("container-productos").append(card); 
+        card.className ="card col-10 col-md-3 img-cat main-img";   
     }
 }
-
 armadoCard();
 
-const addAllToShopButton = document.querySelectorAll(`btn-primary`);
+//variables
+const addButtons = document.querySelectorAll(`#btn-add`);
 
-addAllToShopButton.forEach((addToCartButton) => {
-    addToCartButton.addEventListener(`click`, () => console.log(`click`));
+//funcion creo el evento del click del boton y llamo a la funcion traer la card seleccionada por el usuario
+addButtons.forEach(button =>{
+    button.addEventListener(`click`,addToCartClicked);
 });
+// funcion que trae la card y extraigo los items de la card que me sirven. Llamo a otra funcion para armar el carrito
+function addToCartClicked(event){
+    const boton = event.target;
+    const traerCardEntera = boton.closest(`.card`);
 
-/*
-let boton = document.getElementsByClassName("btn-primary")
-boton.addEventListener("click",respuestaClick);
-//acá debo agregar la eleccion del cliente del artículo a agregar.
-function respuestaClick(){
+    const cardTitle = traerCardEntera.querySelector(`.card-title`).textContent;
+    const cardPrecio = traerCardEntera.querySelector(`.card-text`).textContent;
+    const cardImg = traerCardEntera.querySelector(`.card-img-top`).src;
 
+    addProdToCart(cardTitle, cardPrecio, cardImg); 
+};
+
+
+//no darle importancia  a esto, estaba probando algo 
+/*const seleccionadoDelCatalogo = document.querySelector(`#seleccionado-del-catalogo`);
+
+function addProdToCart(titulo, precio, img){
+    let carritoShowAdd = document.createElement("tr")
+
+    carritoShowAdd.innerHTML += `
+        <th scope="row">1</th>
+        <td>${img}</td>
+        <td>${titulo}</td>
+        <td>${precio}</td>
+
+    `; 
+    document.getElementById("seleccionado-del-catalogo").append(carritoShowAdd);
+    
 }
 */
